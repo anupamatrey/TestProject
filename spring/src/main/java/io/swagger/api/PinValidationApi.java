@@ -15,12 +15,14 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2017-09-12T16:03:09.305Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2017-09-12T19:14:47.483Z")
 
 @Api(value = "pinValidation", description = "the pinValidation API")
 public interface PinValidationApi {
 
-    @ApiOperation(value = "This API is used to validated the PIN Details based on MetRef Id", notes = "", response = InlineResponse200.class, tags={  })
+    @ApiOperation(value = "This API is used to validated the PIN Details based on MetRef Id", notes = "", response = InlineResponse200.class, authorizations = {
+        @Authorization(value = "basicAuth")
+    }, tags={  })
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "Successful response", response = InlineResponse200.class),
         @ApiResponse(code = 404, message = "The specified metrefId is invalid or Data not found (e.g. not a number)", response = InlineResponse200.class) })
