@@ -15,7 +15,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2017-09-13T13:30:09.485Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2017-09-13T13:30:27.451Z")
 
 @Api(value = "pinValidation", description = "the pinValidation API")
 public interface PinValidationApi {
@@ -24,7 +24,7 @@ public interface PinValidationApi {
         @Authorization(value = "basicAuth")
     }, tags={  })
     @ApiResponses(value = { 
-        @ApiResponse(code = 200, message = "Successful response", response = InlineResponse200.class),
+        @ApiResponse(code = 200, message = "OK", response = InlineResponse200.class),
         @ApiResponse(code = 404, message = "The specified metrefId is invalid or Data not found (e.g. not a number)", response = InlineResponse200.class),
         @ApiResponse(code = 401, message = "Authentication information is missing or invalid", response = InlineResponse200.class),
         @ApiResponse(code = 500, message = "Unexpected error.", response = InlineResponse200.class) })
