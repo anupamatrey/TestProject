@@ -17,12 +17,12 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
 
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2017-09-12T19:48:51.468Z")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2017-09-13T13:29:48.181Z")
 
 @Controller
 public class PinValidationApiController implements PinValidationApi {
 
-    public ResponseEntity<InlineResponse200> pinValidationMetrefIdGet(@ApiParam(value = "This will return users generated pin.",required=true ) @PathVariable("metrefId") String metrefId) {
+    public ResponseEntity<InlineResponse200> pinsValidationByMetrefId(@ApiParam(value = "This will return users generated pin.",required=true ) @PathVariable("metrefId") String metrefId) {
         // do some magic!
         return new ResponseEntity<InlineResponse200>(HttpStatus.OK);
     }
